@@ -35,6 +35,9 @@ public class Brand {
     @Schema(description = "브랜드 설명")
     private String description;
 
+    @Schema(description = "브랜드 슬로건")
+    private String slogan;
+
     @Schema(description = "브랜드 공식 웹사이트 URL")
     private String brandPageUrl;
 

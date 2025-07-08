@@ -4,6 +4,8 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.time.LocalDateTime;
+
 /**
  * 스크랩 엔티티
  * 사용자가 브랜드를 스크랩한 정보를 관리합니다.
@@ -32,5 +34,20 @@ public class Scrap {
 
     @Schema(description = "즐겨찾기 여부", example = "true")
     private Boolean isScraped;
-
+    
+    @Column(name = "scraped_at")
+    @Schema(description = "스크랩 시간")
+    private LocalDateTime scrapedAt;
+    
+    /**
+     * 스크랩 상태 변경
+     * 
+     * @param isScraped 스크랩 여부
+     */
+    public void updateScrapStatus(Boolean isScraped) {
+        this.isScraped = isScraped;
+        if (isScraped) {
+            this.scrapedAt = LocalDateTime.now();
+        }
+    }
 }

@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 @RequiredArgsConstructor
 @Tag(name = "브랜드 API", description = "브랜드 정보 관련 API")
@@ -23,5 +25,12 @@ public class BrandController {
             @PathVariable String email,
             @PathVariable Long brandId) {
         return ResponseEntity.ok(brandService.getBrandInfoAndRecordVisit(email, brandId));
+    }
+    
+    @Operation(summary = "최근 방문한 브랜드 목록", description = "사용자가 최근에 방문한 브랜드 목록을 조회합니다.")
+    @GetMapping("/recent-visits/{email}")
+    public ResponseEntity<List<res.RecentVisitInfo>> getRecentVisitedBrands(
+            @PathVariable String email) {
+        return ResponseEntity.ok(brandService.getRecentVisitedBrands(email));
     }
 }

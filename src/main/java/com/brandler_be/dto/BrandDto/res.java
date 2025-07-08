@@ -9,6 +9,32 @@ import lombok.NoArgsConstructor;
 public class res {
 
     /**
+     * 최근 방문한 브랜드 정보 응답 DTO
+     */
+    @Getter
+    @Builder
+    @NoArgsConstructor
+    @AllArgsConstructor
+    @Schema(description = "최근 방문한 브랜드 정보")
+    public static class RecentVisitInfo {
+        
+        @Schema(description = "브랜드 ID")
+        private Long brandId;
+        
+        @Schema(description = "브랜드 이름")
+        private String brandName;
+        
+        @Schema(description = "브랜드 로고 이미지")
+        private String brandLogo;
+        
+        @Schema(description = "브랜드 배너 이미지")
+        private String brandBanner;
+        
+        @Schema(description = "브랜드 슬로건")
+        private String slogan;
+    }
+
+    /**
      * 브랜드 정보 응답 DTO
      */
     @Getter
