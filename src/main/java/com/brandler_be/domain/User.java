@@ -36,21 +36,14 @@ public class User {
     private String genre;
 
 
-    /*
     @JsonIgnore
     @OneToMany(mappedBy = "user")
-    private List<Scrap> scraps = new ArrayList<>();
+    private List<Visit> visits = new ArrayList<>();
 
-    @JsonIgnore
-    @OneToMany(mappedBy = "user")
-    private List<VisitLog> visitLogs = new ArrayList<>();
-    */
-    
+
+
     /**
      * 사용자 정보 업데이트
-     * 
-     * @param name 새 닉네임
-     * @param genre 새 선호 장르
      */
     public void updateUserInfo(String name, String genre) {
         if (name != null) {

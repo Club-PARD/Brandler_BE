@@ -41,11 +41,8 @@ public class Brand {
     @Schema(description = "브랜드 장르")
     private String genre;
 
-
-
-
-
-
-
+    @JsonIgnore
+    @OneToMany(mappedBy = "brand")
+    private List<Visit> visits = new ArrayList<>();
 
 }
