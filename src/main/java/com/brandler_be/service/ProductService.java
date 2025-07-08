@@ -50,4 +50,28 @@ public class ProductService {
                         .build())
                 .toList();
     }
+    
+    /**
+     * 키워드로 상품 검색
+     * 
+     * @param keyword 검색 키워드
+     * @return 검색된 상품 목록
+     */
+    @Transactional(readOnly = true)
+    public List<res.ProductSearchInfo> searchProductsByKeyword(String keyword) {
+        log.info("키워드로 상품 검색: {}", keyword);
+        
+        List<Product> products = productRepository.findByProductNameContainingIgnoreCase(keyword);
+        
+        List<res.ProductSearchInfo> result = products.stream()
+                .map(product -> res.ProductSearchInfo.builder()
+                        .brandId(product.getBrand().getId())
+                        .productName(product.getProductName())
+                        .productImage(product.getProductImage())
+                        .build())
+                .collect(Collectors.toList());
+        
+        log.info("키워드 '{}' 검색 결과: {}개 상품 조회됨", keyword, result.size());
+        return result;
+    }
 }

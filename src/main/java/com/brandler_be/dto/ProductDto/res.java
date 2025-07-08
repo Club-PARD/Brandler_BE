@@ -30,4 +30,24 @@ public class res {
         @Schema(description = "상품 가격")
         private int price;
     }
+    
+    /**
+     * 상품 검색 결과 응답 DTO
+     */
+    @Getter
+    @Builder
+    @NoArgsConstructor
+    @AllArgsConstructor
+    @Schema(description = "상품 검색 결과")
+    public static class ProductSearchInfo {
+        
+        @Schema(description = "브랜드 ID")
+        private Long brandId;
+        
+        @Schema(description = "상품명")
+        private String productName;
+        
+        @Schema(description = "상품 이미지")
+        private String productImage;
+    }
 }

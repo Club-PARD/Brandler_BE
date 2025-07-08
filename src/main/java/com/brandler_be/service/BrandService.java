@@ -5,6 +5,7 @@ import com.brandler_be.domain.User;
 import com.brandler_be.domain.Visit;
 import com.brandler_be.dto.BrandDto.res;
 import com.brandler_be.repository.BrandRepository;
+import com.brandler_be.repository.ScrapRepository;
 import com.brandler_be.repository.UserRepository;
 import com.brandler_be.repository.VisitRepository;
 import lombok.RequiredArgsConstructor;
@@ -23,6 +24,7 @@ public class BrandService {
     private final BrandRepository brandRepository;
     private final UserRepository userRepository;
     private final VisitRepository visitRepository;
+    private final ScrapRepository scrapRepository;
 
     /**
      * 브랜드 정보 조회 및 방문 기록 저장
@@ -109,6 +111,67 @@ public class BrandService {
         }
         
         log.info("사용자 {} 최근 방문 브랜드 {}개 조회 완료", email, result.size());
+        return result;
+    }
+    
+    /**
+     * 스크랩이 가장 많은 상위 10개 브랜드 조회
+     * 
+     * @return 스크랩 수가 많은 상위 10개 브랜드 목록
+     */
+    @Transactional(readOnly = true)
+    public List<res.TopScrapedBrandInfo> getTopScrapedBrands() {
+        log.info("스크랩이 가장 많은 상위 10개 브랜드 조회");
+        
+        final int TOP_BRANDS_LIMIT = 10;
+        
+        // 스크랩이 많은 순으로 브랜드 조회
+        List<Object[]> topBrandsWithCount = scrapRepository.findTopBrandsByScrapCount();
+        
+        List<res.TopScrapedBrandInfo> result = new ArrayList<>();
+        
+        for (Object[] brandWithCount : topBrandsWithCount) {
+            if (result.size() >= TOP_BRANDS_LIMIT) {
+                break;
+            }
+            
+            Brand brand = (Brand) brandWithCount[0];
+            
+            result.add(res.TopScrapedBrandInfo.builder()
+                    .brandId(brand.getId())
+                    .brandName(brand.getBrandName())
+                    .brandLogo(brand.getBrandLogo())
+                    .brandBanner(brand.getBrandBanner())
+                    .slogan(brand.getSlogan())
+                    .build());
+        }
+        
+        log.info("스크랩이 가장 많은 상위 {}개 브랜드 조회 완료", result.size());
+        return result;
+    }
+    
+    /**
+     * 키워드로 브랜드 검색
+     * 
+     * @param keyword 검색 키워드
+     * @return 검색된 브랜드 목록
+     */
+    @Transactional(readOnly = true)
+    public List<res.BrandSearchInfo> searchBrandsByKeyword(String keyword) {
+        log.info("키워드로 브랜드 검색: {}", keyword);
+        
+        List<Brand> brands = brandRepository.findByBrandNameContainingIgnoreCase(keyword);
+        
+        List<res.BrandSearchInfo> result = brands.stream()
+                .map(brand -> res.BrandSearchInfo.builder()
+                        .brandId(brand.getId())
+                        .brandName(brand.getBrandName())
+                        .brandLogo(brand.getBrandLogo())
+                        .brandBanner(brand.getBrandBanner())
+                        .build())
+                .collect(Collectors.toList());
+        
+        log.info("키워드 '{}' 검색 결과: {}개 브랜드 조회됨", keyword, result.size());
         return result;
     }
 }

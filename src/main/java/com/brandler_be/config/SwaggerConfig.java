@@ -22,41 +22,24 @@ public class SwaggerConfig {
 
     @Bean
     public OpenAPI openAPI() {
-        Info info = new Info()
-                .title("Brandler API")
-                .version("v1.0.0")
-                .description("Brandler 서비스의 API 명세서입니다.")
-                .contact(new Contact()
-                        .name("Brandler Team")
-                        .email("contact@brandler.com")
-                        .url("https://github.com/Club-PARD/Brandler_BE"))
-                .license(new License()
-                        .name("Apache License Version 2.0")
-                        .url("http://www.apache.org/licenses/LICENSE-2.0"));
+        Server httpsServer = new Server();
+        httpsServer.setUrl("https://brandler.shop");
+        httpsServer.setDescription("Production HTTPS server");
 
-        // 로컬 개발 서버와 운영 서버 정보 추가
         Server localServer = new Server();
         localServer.setUrl("http://localhost:8080");
-        localServer.setDescription("Local Development Server");
-
-        Server prodServer = new Server();
-        prodServer.setUrl("https://api.brandler.com");
-        prodServer.setDescription("Production Server");
-
-        // JWT 인증 스키마 설정
-        SecurityScheme securityScheme = new SecurityScheme()
-                .type(SecurityScheme.Type.HTTP)
-                .scheme("bearer")
-                .bearerFormat("JWT")
-                .in(SecurityScheme.In.HEADER)
-                .name("Authorization");
-
-        SecurityRequirement securityRequirement = new SecurityRequirement().addList("bearerAuth");
+        localServer.setDescription("Local Development server");
 
         return new OpenAPI()
-                .info(info)
-                .servers(Arrays.asList(localServer, prodServer))
-                .components(new Components().addSecuritySchemes("bearerAuth", securityScheme))
-                .addSecurityItem(securityRequirement);
+                .components(new Components())
+                .servers(Arrays.asList(httpsServer, localServer))
+                .info(apiInfo());
+    }
+
+    private Info apiInfo() {
+        return new Info()
+                .title("BRANDLER API Documentation")
+                .description("brandler API 문서입니다.")
+                .version("1.0.0");
     }
 }

@@ -28,9 +28,17 @@ public class BrandController {
     }
     
     @Operation(summary = "최근 방문한 브랜드 목록", description = "사용자가 최근에 방문한 브랜드 목록을 조회합니다.")
-    @GetMapping("/recent-visits/{email}")
+    @GetMapping("/recent/{email}")
     public ResponseEntity<List<res.RecentVisitInfo>> getRecentVisitedBrands(
             @PathVariable String email) {
         return ResponseEntity.ok(brandService.getRecentVisitedBrands(email));
     }
+    
+    @Operation(summary = "스크랩이 많은 상위 10개 브랜드", description = "스크랩이 가장 많은 상위 10개 브랜드를 조회합니다.")
+    @GetMapping("/top10")
+    public ResponseEntity<List<res.TopScrapedBrandInfo>> getTopScrapedBrands() {
+        return ResponseEntity.ok(brandService.getTopScrapedBrands());
+    }
+    
+
 }

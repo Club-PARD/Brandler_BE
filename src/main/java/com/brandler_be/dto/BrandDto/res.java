@@ -33,6 +33,32 @@ public class res {
         @Schema(description = "브랜드 슬로건")
         private String slogan;
     }
+    
+    /**
+     * 스크랩이 많은 상위 브랜드 정보 응답 DTO
+     */
+    @Getter
+    @Builder
+    @NoArgsConstructor
+    @AllArgsConstructor
+    @Schema(description = "스크랩이 많은 상위 브랜드 정보")
+    public static class TopScrapedBrandInfo {
+        
+        @Schema(description = "브랜드 ID")
+        private Long brandId;
+        
+        @Schema(description = "브랜드 이름")
+        private String brandName;
+        
+        @Schema(description = "브랜드 로고 이미지")
+        private String brandLogo;
+        
+        @Schema(description = "브랜드 배너 이미지")
+        private String brandBanner;
+        
+        @Schema(description = "브랜드 슬로건")
+        private String slogan;
+    }
 
     /**
      * 브랜드 정보 응답 DTO
@@ -64,5 +90,28 @@ public class res {
         
         @Schema(description = "브랜드 장르")
         private String genre;
+    }
+    
+    /**
+     * 브랜드 검색 결과 응답 DTO
+     */
+    @Getter
+    @Builder
+    @NoArgsConstructor
+    @AllArgsConstructor
+    @Schema(description = "브랜드 검색 결과")
+    public static class BrandSearchInfo {
+        
+        @Schema(description = "브랜드 ID")
+        private Long brandId;
+        
+        @Schema(description = "브랜드 이름")
+        private String brandName;
+        
+        @Schema(description = "브랜드 로고 이미지")
+        private String brandLogo;
+        
+        @Schema(description = "브랜드 배너 이미지")
+        private String brandBanner;
     }
 }

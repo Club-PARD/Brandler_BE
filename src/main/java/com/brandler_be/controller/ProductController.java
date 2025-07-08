@@ -14,7 +14,7 @@ import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
-@Tag(name = "브랜드 API", description = "브랜드 정보 관련 API")
+@Tag(name = "상품 API", description = "상품 정보 관련 API")
 public class ProductController {
 
     private final ProductService productService;
@@ -25,4 +25,6 @@ public class ProductController {
             @PathVariable Long brandId) {
         return ResponseEntity.ok(productService.getProductsByBrandId(brandId));
     }
+    
+
 }

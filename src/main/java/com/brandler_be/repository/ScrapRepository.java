@@ -4,6 +4,7 @@ import com.brandler_be.domain.Brand;
 import com.brandler_be.domain.Scrap;
 import com.brandler_be.domain.User;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -28,4 +29,13 @@ public interface ScrapRepository extends JpaRepository<Scrap, Long> {
      * @return 스크랩 목록
      */
     List<Scrap> findByUserAndIsScrapedTrue(User user);
+    
+    /**
+     * 스크랩이 많은 순으로 브랜드 조회
+     * isScraped가 true인 스크랩만 집계
+     * 
+     * @return 브랜드 목록
+     */
+    @Query("SELECT s.brand, COUNT(s) as scrapCount FROM Scrap s WHERE s.isScraped = true GROUP BY s.brand ORDER BY scrapCount DESC")
+    List<Object[]> findTopBrandsByScrapCount();
 }
