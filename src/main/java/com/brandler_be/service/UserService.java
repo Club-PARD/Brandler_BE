@@ -1,8 +1,8 @@
 package com.brandler_be.service;
 
 import com.brandler_be.domain.User;
-import com.brandler_be.dto.UserDto.req.Login;
-import com.brandler_be.dto.UserDto.res.UserInfo;
+import com.brandler_be.dto.UserDto.req;
+import com.brandler_be.dto.UserDto.res;
 import com.brandler_be.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -25,7 +25,7 @@ public class UserService {
      * 없으면 새로 생성합니다.
      */
     @Transactional
-    public void login(Login request) {
+    public void login(req.Login request) {
         log.info("로그인 요청 처리: {}", request.getEmail());
         
         // 이메일로 사용자 조회
@@ -52,17 +52,32 @@ public class UserService {
      * 이메일로 유저 정보 조회
      */
     @Transactional(readOnly = true)
-    public UserInfo getUserInfo(String email) {
+    public res.UserInfo getUserInfo(String email) {
         log.info("유저 정보 조회: {}", email);
         
         User user = userRepository.findByEmail(email)
                 .orElseThrow(() -> new NoSuchElementException("존재하지 않는 사용자입니다: " + email));
         
-        return UserInfo.builder()
+        return res.UserInfo.builder()
                 .email(user.getEmail())
                 .name(user.getName())
                 .genre(user.getGenre())
                 .build();
+    }
+
+
+    /**
+     * 유저 정보 수정
+     */
+    @Transactional
+    public void updateUserInfo(String email, req.UpdateUserInfo request) {
+        log.info("유저 정보 수정: {}", email);
+        
+        User user = userRepository.findByEmail(email)
+                .orElseThrow(() -> new NoSuchElementException("존재하지 않는 사용자입니다: " + email));
+        
+        user.updateUserInfo(request.getName(), request.getGenre());
+        userRepository.save(user);
     }
 
 
