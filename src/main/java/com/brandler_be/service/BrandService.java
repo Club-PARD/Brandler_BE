@@ -3,7 +3,7 @@ package com.brandler_be.service;
 import com.brandler_be.domain.Brand;
 import com.brandler_be.domain.User;
 import com.brandler_be.domain.Visit;
-import com.brandler_be.dto.UserDto.res;
+import com.brandler_be.dto.BrandDto.res;
 import com.brandler_be.repository.BrandRepository;
 import com.brandler_be.repository.UserRepository;
 import com.brandler_be.repository.VisitRepository;

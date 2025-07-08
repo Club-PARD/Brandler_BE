@@ -32,12 +32,10 @@ public class Product {
     @Column(name = "category", length = 50)
     @Schema(description = "상품 카테고리", example = "티셔츠")
     private String category;
-
-    /*
+    
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "brand_id", nullable = false)
     @Schema(description = "상품이 속한 브랜드")
     private Brand brand;
-    */
 
 }

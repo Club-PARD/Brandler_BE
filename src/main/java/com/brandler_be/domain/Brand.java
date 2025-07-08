@@ -45,4 +45,7 @@ public class Brand {
     @OneToMany(mappedBy = "brand")
     private List<Visit> visits = new ArrayList<>();
 
+    @JsonIgnore
+    @OneToMany(mappedBy = "brand")
+    private List<Product> products = new ArrayList<>();
 }
