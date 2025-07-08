@@ -2,11 +2,14 @@ package com.brandler_be.service;
 
 import com.brandler_be.domain.User;
 import com.brandler_be.dto.UserDto.req.Login;
+import com.brandler_be.dto.UserDto.res.UserInfo;
 import com.brandler_be.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.NoSuchElementException;
 
 @Slf4j
 @Service
@@ -44,6 +47,23 @@ public class UserService {
         userRepository.save(newUser);
     }
 
+
+    /**
+     * 이메일로 유저 정보 조회
+     */
+    @Transactional(readOnly = true)
+    public UserInfo getUserInfo(String email) {
+        log.info("유저 정보 조회: {}", email);
+        
+        User user = userRepository.findByEmail(email)
+                .orElseThrow(() -> new NoSuchElementException("존재하지 않는 사용자입니다: " + email));
+        
+        return UserInfo.builder()
+                .email(user.getEmail())
+                .name(user.getName())
+                .genre(user.getGenre())
+                .build();
+    }
 
 
 }
