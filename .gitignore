@@ -47,6 +47,8 @@ out/
 **/application-local.yml
 **/application-oauth.yml
 **/application-secret.yml
+src/main/resources/application.yaml
+/Users/mingyu/Documents/workspace/Brandler_BE/src/main/resources/application.yaml
 **/secrets.yml
 **/secrets.yaml
 .env
