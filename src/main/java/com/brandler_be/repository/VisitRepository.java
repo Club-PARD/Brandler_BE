@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface VisitRepository extends JpaRepository<Visit, Long> {
+public interface VisitRepository extends JpaRepository<Visit, Integer> {
     
     /**
      * 사용자가 최근에 방문한 브랜드 목록 조회

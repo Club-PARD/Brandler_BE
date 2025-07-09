@@ -20,7 +20,7 @@ public class Scrap {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Schema(description = "스크랩 ID")
-    private Long id;
+    private int id;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_email", nullable = false)

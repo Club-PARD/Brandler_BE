@@ -22,7 +22,7 @@ public class ProductController {
     @Operation(summary = "브랜드별 상품 목록 조회", description = "특정 브랜드에 속한 모든 상품 목록을 조회합니다.")
     @GetMapping("/products/{brandId}")
     public ResponseEntity<List<res.ProductInfo>> getProductsByBrandId(
-            @PathVariable Long brandId) {
+            @PathVariable int brandId) {
         return ResponseEntity.ok(productService.getProductsByBrandId(brandId));
     }
     

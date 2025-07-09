@@ -42,7 +42,7 @@ public class res {
     public static class ProductSearchInfo {
         
         @Schema(description = "브랜드 ID")
-        private Long brandId;
+        private int brandId;
         
         @Schema(description = "상품명")
         private String productName;

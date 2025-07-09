@@ -21,7 +21,7 @@ public class Brand {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Schema(description = "브랜드 ID")
-    private Long id;
+    private int id;
 
     @Schema(description = "브랜드 이름")
     private String brandName;

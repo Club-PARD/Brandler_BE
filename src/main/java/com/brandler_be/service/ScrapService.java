@@ -35,7 +35,7 @@ public class ScrapService {
      * @param request 스크랩 상태 변경 요청
      */
     @Transactional
-    public void updateScrapStatus(String email, Long brandId, req.ScrapStatus request) {
+    public void updateScrapStatus(String email, int brandId, req.ScrapStatus request) {
         log.info("스크랩 상태 변경: 사용자={}, 브랜드ID={}, 스크랩여부={}", email, brandId, request.getIsScraped());
         
         // 사용자 조회
@@ -70,7 +70,7 @@ public class ScrapService {
      * @return 스크랩 여부
      */
     @Transactional(readOnly = true)
-    public res.ScrapStatus checkScrapStatus(String email, Long brandId) {
+    public res.ScrapStatus checkScrapStatus(String email, int brandId) {
         log.info("스크랩 여부 확인: 사용자={}, 브랜드ID={}", email, brandId);
         
         // 사용자 조회

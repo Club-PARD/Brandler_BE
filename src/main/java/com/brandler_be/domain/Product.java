@@ -18,7 +18,7 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Schema(description = "상품 ID", accessMode = Schema.AccessMode.READ_ONLY)
-    private Long id;
+    private int id;
 
     @Schema(description = "상품명")
     private String productName;
@@ -37,5 +37,13 @@ public class Product {
     @JoinColumn(name = "brand_id", nullable = false)
     @Schema(description = "상품이 속한 브랜드")
     private Brand brand;
-
+    
+    /**
+     * 상품명 업데이트
+     * 
+     * @param productName 새 상품명
+     */
+    public void updateProductName(String productName) {
+        this.productName = productName;
+    }
 }

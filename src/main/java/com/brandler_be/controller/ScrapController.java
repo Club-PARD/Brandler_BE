@@ -23,7 +23,7 @@ public class ScrapController {
     @PatchMapping("/{email}/{brandId}")
     public ResponseEntity<Void> updateScrapStatus(
             @PathVariable String email,
-            @PathVariable Long brandId,
+            @PathVariable int brandId,
             @RequestBody req.ScrapStatus request) {
         scrapService.updateScrapStatus(email, brandId, request);
         return ResponseEntity.ok().build();
@@ -33,7 +33,7 @@ public class ScrapController {
     @GetMapping("/{email}/{brandId}")
     public ResponseEntity<res.ScrapStatus> checkScrapStatus(
             @PathVariable String email,
-            @PathVariable Long brandId) {
+            @PathVariable int brandId) {
         return ResponseEntity.ok(scrapService.checkScrapStatus(email, brandId));
     }
 

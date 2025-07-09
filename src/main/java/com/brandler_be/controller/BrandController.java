@@ -23,7 +23,7 @@ public class BrandController {
     @GetMapping("/brand/{email}/{brandId}")
     public ResponseEntity<res.BrandInfo> getBrandInfo(
             @PathVariable String email,
-            @PathVariable Long brandId) {
+            @PathVariable int brandId) {
         return ResponseEntity.ok(brandService.getBrandInfoAndRecordVisit(email, brandId));
     }
     
@@ -38,6 +38,13 @@ public class BrandController {
     @GetMapping("/top10")
     public ResponseEntity<List<res.TopScrapedBrandInfo>> getTopScrapedBrands() {
         return ResponseEntity.ok(brandService.getTopScrapedBrands());
+    }
+    
+    @Operation(summary = "정렬된 브랜드 목록", description = "사용자가 스크랩하지 않은 브랜드를 먼저 보여주고, 스크랩한 브랜드는 상품 수가 적은 순으로 정렬하여 보여줍니다.")
+    @GetMapping("/brands/sort/{email}")
+    public ResponseEntity<List<res.SortedBrandInfo>> getSortedBrands(
+            @PathVariable String email) {
+        return ResponseEntity.ok(brandService.getSortedBrands(email));
     }
     
 

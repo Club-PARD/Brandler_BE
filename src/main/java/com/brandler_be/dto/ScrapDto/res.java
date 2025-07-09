@@ -35,7 +35,7 @@ public class res {
     public static class ScrapInfo {
         
         @Schema(description = "브랜드 ID")
-        private Long brandId;
+        private int brandId;
         
         @Schema(description = "브랜드 이름")
         private String brandName;

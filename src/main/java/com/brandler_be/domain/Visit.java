@@ -21,7 +21,7 @@ public class Visit {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "visit_id")
     @Schema(description = "방문 기록 ID")
-    private Long id;
+    private int id;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_email", nullable = false)

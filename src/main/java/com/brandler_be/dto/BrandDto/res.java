@@ -19,7 +19,7 @@ public class res {
     public static class RecentVisitInfo {
         
         @Schema(description = "브랜드 ID")
-        private Long brandId;
+        private int brandId;
         
         @Schema(description = "브랜드 이름")
         private String brandName;
@@ -45,7 +45,7 @@ public class res {
     public static class TopScrapedBrandInfo {
         
         @Schema(description = "브랜드 ID")
-        private Long brandId;
+        private int brandId;
         
         @Schema(description = "브랜드 이름")
         private String brandName;
@@ -71,7 +71,7 @@ public class res {
     public static class BrandInfo {
         
         @Schema(description = "브랜드 ID")
-        private Long id;
+        private int id;
         
         @Schema(description = "브랜드 이름")
         private String brandName;
@@ -93,6 +93,35 @@ public class res {
     }
     
     /**
+     * 정렬된 브랜드 정보 응답 DTO
+     */
+    @Getter
+    @Builder
+    @NoArgsConstructor
+    @AllArgsConstructor
+    @Schema(description = "정렬된 브랜드 정보")
+    public static class SortedBrandInfo {
+        
+        @Schema(description = "브랜드 ID")
+        private int brandId;
+        
+        @Schema(description = "브랜드 이름")
+        private String brandName;
+        
+        @Schema(description = "브랜드 로고 이미지")
+        private String brandLogo;
+        
+        @Schema(description = "브랜드 배너 이미지")
+        private String brandBanner;
+        
+        @Schema(description = "브랜드 장르")
+        private String genre;
+        
+        @Schema(description = "브랜드 슬로건")
+        private String slogan;
+    }
+    
+    /**
      * 브랜드 검색 결과 응답 DTO
      */
     @Getter
@@ -103,7 +132,7 @@ public class res {
     public static class BrandSearchInfo {
         
         @Schema(description = "브랜드 ID")
-        private Long brandId;
+        private int brandId;
         
         @Schema(description = "브랜드 이름")
         private String brandName;
@@ -113,5 +142,10 @@ public class res {
         
         @Schema(description = "브랜드 배너 이미지")
         private String brandBanner;
+
+
+        @Schema(description = "브랜드 슬로건")
+        private String slogan;
+
     }
 }
