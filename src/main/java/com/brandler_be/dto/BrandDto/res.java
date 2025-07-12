@@ -90,6 +90,9 @@ public class res {
         
         @Schema(description = "브랜드 장르")
         private String genre;
+        
+        @Schema(description = "브랜드를 스크랩한 사용자 수")
+        private int scrapCount;
     }
     
     /**

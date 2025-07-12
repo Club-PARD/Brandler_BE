@@ -56,6 +56,10 @@ public class BrandService {
         
         log.info("방문 기록 저장 완료: 사용자={}, 브랜드={}", email, brand.getBrandName());
         
+        // 브랜드를 스크랩한 사용자 수 조회
+        Integer scrapCount = scrapRepository.countUsersByBrandId(brandId);
+        log.info("브랜드 {} 스크랩 사용자 수: {}", brand.getBrandName(), scrapCount);
+        
         // 브랜드 정보 반환
         return res.BrandInfo.builder()
                 .id(brand.getId())
@@ -65,6 +69,7 @@ public class BrandService {
                 .description(brand.getDescription())
                 .brandPageUrl(brand.getBrandPageUrl())
                 .genre(brand.getGenre())
+                .scrapCount(scrapCount != null ? scrapCount : 0) // null 체크 추가
                 .build();
     }
     
@@ -181,8 +186,8 @@ public class BrandService {
         // 3. 브랜드별 상품 수 조회
         Map<Integer, Integer> brandProductCounts = new HashMap<>();
         productRepository.countProductsByBrand().forEach(result -> {
-            int brandId = (int) result[0];
-            int count = (int) result[1];
+            Integer brandId = ((Number) result[0]).intValue();
+            Integer count = ((Number) result[1]).intValue();
             brandProductCounts.put(brandId, count);
         });
         

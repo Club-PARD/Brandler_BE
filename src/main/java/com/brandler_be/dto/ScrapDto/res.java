@@ -49,4 +49,27 @@ public class res {
         @Schema(description = "브랜드 슬로건")
         private String slogan;
     }
+    
+    /**
+     * 테스트용 스크랩 결과 응답 DTO
+     */
+    @Getter
+    @Builder
+    @NoArgsConstructor
+    @AllArgsConstructor
+    @Schema(description = "테스트용 스크랩 결과")
+    public static class TestScrapResult {
+        
+        @Schema(description = "브랜드 ID")
+        private int brandId;
+        
+        @Schema(description = "브랜드 이름")
+        private String brandName;
+        
+        @Schema(description = "설정된 스크랩 수")
+        private int scrapCount;
+        
+        @Schema(description = "생성된 테스트 사용자 수")
+        private int createdUsers;
+    }
 }

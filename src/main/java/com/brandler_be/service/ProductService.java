@@ -45,6 +45,7 @@ public class ProductService {
         // 상품 정보 DTO로 변환하여 반환
         return products.stream()
                 .map(product -> res.ProductInfo.builder()
+                        .productId(product.getId())
                         .productName(product.getProductName())
                         .productImageName(product.getProductImage())
                         .productCategory(product.getCategory())
@@ -156,6 +157,7 @@ public class ProductService {
                         .brandId(product.getBrand() != null ? product.getBrand().getId() : null)
                         .productName(product.getProductName())
                         .productImage(product.getProductImage())
+                        .price(product.getPrice())
                         .build())
                 .collect(Collectors.toList());
     }

@@ -18,6 +18,9 @@ public class res {
     @Schema(description = "상품 정보 응답")
     public static class ProductInfo {
         
+        @Schema(description = "상품 ID")
+        private int productId;
+        
         @Schema(description = "상품명")
         private String productName;
         
@@ -49,5 +52,8 @@ public class res {
         
         @Schema(description = "상품 이미지")
         private String productImage;
+        
+        @Schema(description = "상품 가격")
+        private int price;
     }
 }

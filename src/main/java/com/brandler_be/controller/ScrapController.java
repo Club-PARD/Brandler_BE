@@ -43,4 +43,12 @@ public class ScrapController {
             @PathVariable String email) {
         return ResponseEntity.ok(scrapService.getScrapList(email));
     }
+    
+    @Operation(summary = "[개발용] 브랜드 스크랩 수 설정", description = "테스트를 위해 특정 브랜드의 스크랩 수를 설정합니다.")
+    @PostMapping("/test/set-scrap-count/{brandId}/{count}")
+    public ResponseEntity<res.TestScrapResult> setScrapCountForTesting(
+            @PathVariable int brandId,
+            @PathVariable int count) {
+        return ResponseEntity.ok(scrapService.setScrapCountForTesting(brandId, count));
+    }
 }

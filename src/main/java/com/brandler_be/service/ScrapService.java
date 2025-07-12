@@ -16,6 +16,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.NoSuchElementException;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 
 @Slf4j
@@ -125,5 +126,66 @@ public class ScrapService {
                         .build();
                 })
                 .toList();
+    }
+    
+    /**
+     * [개발용] 특정 브랜드의 스크랩 수 설정
+     * 테스트 목적으로만 사용해야 함
+     * 
+     * @param brandId 브랜드 ID
+     * @param count 설정할 스크랩 수
+     * @return 테스트 결과 정보
+     */
+    @Transactional
+    public res.TestScrapResult setScrapCountForTesting(int brandId, int count) {
+        log.info("[개발용] 브랜드 ID {} 스크랩 수 {} 설정", brandId, count);
+        
+        // 브랜드 확인
+        Brand brand = brandRepository.findById(brandId)
+                .orElseThrow(() -> new NoSuchElementException("존재하지 않는 브랜드입니다: " + brandId));
+        
+        // 기존 테스트 스크랩 삭제 (test로 시작하는 이메일 사용자의 스크랩만 삭제)
+        List<Scrap> existingTestScraps = scrapRepository.findByBrandIdAndUserEmailStartingWith(brandId, "test");
+        scrapRepository.deleteAll(existingTestScraps);
+        
+        AtomicInteger createdUsers = new AtomicInteger(0);
+        
+        // 테스트용 사용자 생성 및 스크랩 추가
+        for (int i = 0; i < count; i++) {
+            final int index = i; // 람다에서 사용할 불변 변수
+            String email = "test" + index + "@example.com";
+            
+            // 사용자가 없으면 생성
+            User user = userRepository.findByEmail(email)
+                    .orElseGet(() -> {
+                        User newUser = User.builder()
+                                .email(email)
+                                .name("TestUser" + index)
+                                .genre("캐주얼") // 기본 장르 설정
+                                .build();
+                        createdUsers.incrementAndGet();
+                        return userRepository.save(newUser);
+                    });
+            
+            // 스크랩 생성
+            Scrap scrap = Scrap.builder()
+                    .user(user)
+                    .brand(brand)
+                    .isScraped(true)
+                    .scrapedAt(LocalDateTime.now())
+                    .build();
+            
+            scrapRepository.save(scrap);
+        }
+        
+        log.info("[개발용] 브랜드 {} 스크랩 수 {} 설정 완료, 생성된 사용자: {}", 
+                brand.getBrandName(), count, createdUsers.get());
+        
+        return res.TestScrapResult.builder()
+                .brandId(brandId)
+                .brandName(brand.getBrandName())
+                .scrapCount(count)
+                .createdUsers(createdUsers.get())
+                .build();
     }
 }
