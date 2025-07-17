@@ -125,7 +125,8 @@ iOS 패션 브랜드 탐색 및 관리 앱
 
 ## 🧱 ERD
 
-![image](https://github.com/user-attachments/assets/48495f2c-e8f5-4ee3-89ec-1e999bae5917)
+<img width="535" height="454" alt="image" src="https://github.com/user-attachments/assets/f95d94d6-d8c5-40e8-a5b7-acadb554eade" />
+
 
 ---
 
