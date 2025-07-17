@@ -42,13 +42,13 @@ iOS 패션 브랜드 탐색 및 관리 앱
 
 ## 👨‍👩‍👧‍👦 팀원 소개
 
-| iOS 김민준 | iOS 최준영 | iOS 김사랑 | Back-end 김민규 |
+| iOS 김경동 | iOS 정태주 | iOS 지예혁 | Back-end 김민규 |
 |------------|------------|------------|----------------|
-| <img src="https://github.com/user-attachments/assets/4303940d-1e88-48f5-930b-22cfeb5246a1" width="120" /> | <img src="https://github.com/user-attachments/assets/f849fd8b-c5d8-45b8-9f2d-e19abf4f9e01" width="120" /> | <img src="https://github.com/user-attachments/assets/89013085-a1ad-4969-8328-ef7617585873" width="120" /> | <img src="https://github.com/user-attachments/assets/a8e911c6-1cf8-44fe-ad2c-167e8daf4021" width="120" /> |
+| <img src="https://github.com/user-attachments/assets/a8e911c6-1cf8-44fe-ad2c-167e8daf4021" width="120" /> |
 
-| PM 최수원 | 디자이너 이채정 | 디자이너 이서현 |
+| PM 허승민 | 디자이너 조예영 |
 |------------|----------------|----------------|
-| <img src="https://github.com/user-attachments/assets/81ba93dd-c874-49e7-9bc5-99684922fe83" width="120" /> | <img src="https://github.com/user-attachments/assets/fba74226-5005-498e-a487-95f6dc1e26d1" width="120" /> | <img src="https://github.com/user-attachments/assets/abeb52ba-c496-43e9-aecb-6459057d7253" width="120" /> |
+
 
 ---
 
