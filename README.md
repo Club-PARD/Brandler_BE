@@ -143,19 +143,25 @@ iOS 패션 브랜드 탐색 및 관리 앱
   <!-- 이미지 4장 -->
   <tr>
     <td align="center">
-      <img height="400" alt="스플래쉬1" src="https://github.com/user-attachments/assets/d7b660db-56a8-4c70-9acd-df84cc57b9db" />
+  <img height="400" alt="스플래쉬1" src="https://github.com/user-attachments/assets/4361e9bc-cc76-4f4a-b57b-097e0352a94d" />
+
 
     </td>
+    
     <td align="center">
-      <img height="400" alt="스플래쉬2" src="https://github.com/user-attachments/assets/519501fb-cab4-440b-aeda-941b9e680f23" />
+  <img height="400" alt="스플래쉬2" src="https://github.com/user-attachments/assets/61ffe84c-685c-45cf-8fad-9ac256d9d412" />
 
     </td>
+    
     <td align="center">
-      <img height="400" alt="메인화면" src="https://github.com/user-attachments/assets/fb3a8f06-28cf-438a-a57e-bec6e21deca8" />
+  <img height="400" alt="메인화면" src="https://github.com/user-attachments/assets/2176b4ba-bd51-4be3-89a2-3c669ef063c0" />
+
+
 
     </td>
+    
     <td align="center">
-      <img height="400" alt="메인화면 아래" src="https://github.com/user-attachments/assets/3b5d4423-e30d-4b53-ad6c-0deb8c7e18d0" />
+<img height="400" alt="메인화면 아래" src="https://github.com/user-attachments/assets/ef374c52-a0a9-4573-966a-967358cf58ff" />
 
     </td>
   </tr>
