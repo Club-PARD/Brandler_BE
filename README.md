@@ -92,7 +92,7 @@ iOS 패션 브랜드 탐색 및 관리 앱
 
 <table align="center">
 <tr>
-<th>단계별 디깅 화면</th>
+  <th colspan="2">단계별 디깅 화면</th>
 </tr>
   
 <tr>
