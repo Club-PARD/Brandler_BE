@@ -88,6 +88,107 @@ iOS 패션 브랜드 탐색 및 관리 앱
 
 ---
 
+### 화면 구성
+
+<table align="center">
+<tr>
+<th>단계별 디깅 화면</th>
+</tr>
+  
+<tr>
+<td align="center">
+
+<img width="1179" height="2556" alt="단계별 디깅 가이드1" src="https://github.com/user-attachments/assets/69638509-f00d-4f48-8c71-2c830625f1fe" />
+
+
+단계별 디깅 화면1
+
+</td>
+<td align="center">
+
+<img width="1179" height="2556" alt="단계별 디깅 가이드2" src="https://github.com/user-attachments/assets/c4dd8262-40d5-4f9c-a358-fafb317a41fb" />
+
+
+단계별 디깅 화면2
+
+
+
+
+
+
+
+
+</td>
+</tr>
+</table>
+
+<table align="center">
+<tr>
+<th>세부 일정 등록</th>
+</tr>
+<tr>
+
+</td>
+<td align="center">
+
+<img src="https://github.com/user-attachments/assets/475dc601-9bde-4ea1-9693-608ced292144" height="400" />
+<img src="https://github.com/user-attachments/assets/c7f2d034-7607-43ea-895c-a38c1d9eded4" height="400" />
+<img src="https://github.com/user-attachments/assets/af9c2b0d-7f59-490b-80e1-aa8a8b143fbe" height="400" />
+<img src="https://github.com/user-attachments/assets/1a07a67c-3473-44a6-bbf7-65156ea8c0ff" height="400" />
+<img src="https://github.com/user-attachments/assets/f79bacbb-d5e1-4519-ae0b-667bcfccae8f" height="400" />
+
+세분화를 해야하는 일정 등록하는 방법 
+
+</td>
+</tr>
+</table>
+
+<br />
+<table align="center">
+<tr>
+<th>간단한 일정 </th>
+<th>동기부여 모달 </th>
+
+</tr>
+<tr>
+<td align="center">
+
+<img src="https://github.com/user-attachments/assets/974c5f06-fc66-4544-8844-26e3015e019d" height="400" />
+
+세분화 하지 않는 간단한 일정 
+
+</td>
+<td align="center">
+
+<img src="https://github.com/user-attachments/assets/79275ffc-df43-450c-b5ce-78277bad40ab" height="400" />
+<img src="https://github.com/user-attachments/assets/81b36ae3-d59e-497d-87de-c94f3ea659e4" height="400" />
+<img src="https://github.com/user-attachments/assets/b94daced-69c5-4631-b5d2-d655ddb1a6e6" height="400" />
+
+동기부여를 줄 수 있는 모달창 
+
+
+</td>
+
+
+</td>
+</tr>
+</table>
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
 ## 🧠 핵심 기능 설명
 
 ### 1. 메인 페이지
