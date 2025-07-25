@@ -92,7 +92,7 @@ iOS 패션 브랜드 탐색 및 관리 앱
 
 <table align="center">
 <tr>
-  <th colspan="2">디깅 레벨</th>
+  <th colspan="4">디깅 레벨</th>
 </tr>
   
 <tr>
