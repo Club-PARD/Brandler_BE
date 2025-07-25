@@ -134,56 +134,39 @@ iOS 패션 브랜드 탐색 및 관리 앱
 
 
 <table align="center">
-<tr>
-  <th colspan="2">스플래쉬</th>
-</tr>
-  
-<tr>
-<td align="center">
+  <!-- 그룹 타이틀: 스플래쉬 / 홈화면 -->
+  <tr>
+    <th colspan="2">스플래쉬</th>
+    <th colspan="2">홈화면</th>
+  </tr>
 
-<img height="400" alt="스플래쉬1" src="https://github.com/user-attachments/assets/cca6ff16-170b-40ab-88ef-1e42cca721b0" />
+  <!-- 이미지 4장 -->
+  <tr>
+    <td align="center">
+      <img height="400" alt="스플래쉬1" src="https://github.com/user-attachments/assets/d7b660db-56a8-4c70-9acd-df84cc57b9db" />
 
+    </td>
+    <td align="center">
+      <img height="400" alt="스플래쉬2" src="https://github.com/user-attachments/assets/519501fb-cab4-440b-aeda-941b9e680f23" />
 
+    </td>
+    <td align="center">
+      <img height="400" alt="메인화면" src="https://github.com/user-attachments/assets/fb3a8f06-28cf-438a-a57e-bec6e21deca8" />
 
-스플래쉬1
+    </td>
+    <td align="center">
+      <img height="400" alt="메인화면 아래" src="https://github.com/user-attachments/assets/3b5d4423-e30d-4b53-ad6c-0deb8c7e18d0" />
 
-</td>
+    </td>
+  </tr>
 
-<td align="center">
-
-
-<img height="400" alt="스플래쉬2" src="https://github.com/user-attachments/assets/a7f81b88-8109-499e-8776-39c210efd618" />
-
-
-
-스플래쉬2
-
-<tr>
-  <th colspan="4">홈화면</th>
-</tr>
-
-</td>
-
-
-<td align="center">
-
-
-<img height="400" alt="메인화면" src="https://github.com/user-attachments/assets/ef59dea5-4cbe-4de1-88d1-6c7119a1efec" />
-
-
-홈화면1
-
-</td>
-<td align="center">
-  
-<img height="400" alt="메인화면 아래" src="https://github.com/user-attachments/assets/bbcb85da-38b3-4b5c-aa19-00c1b285d4ee" />
-
-
-
-
-홈화면2
-
-</tr>
+  <!-- 하단 설명 -->
+  <tr>
+    <td align="center">스플래쉬1</td>
+    <td align="center">스플래쉬2</td>
+    <td align="center">홈화면1</td>
+    <td align="center">홈화면2</td>
+  </tr>
 </table>
 
 
