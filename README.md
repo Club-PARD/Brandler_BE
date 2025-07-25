@@ -98,7 +98,7 @@ iOS 패션 브랜드 탐색 및 관리 앱
 <tr>
 <td align="center">
 
-<img width="1179" height="2556" alt="단계별 디깅 가이드1" src="https://github.com/user-attachments/assets/69638509-f00d-4f48-8c71-2c830625f1fe" />
+<img width="1179" height="400" alt="단계별 디깅 가이드1" src="https://github.com/user-attachments/assets/69638509-f00d-4f48-8c71-2c830625f1fe" />
 
 
 단계별 디깅 화면1
@@ -106,7 +106,7 @@ iOS 패션 브랜드 탐색 및 관리 앱
 </td>
 <td align="center">
 
-<img width="1179" height="2556" alt="단계별 디깅 가이드2" src="https://github.com/user-attachments/assets/c4dd8262-40d5-4f9c-a358-fafb317a41fb" />
+<img width="1179" height="400" alt="단계별 디깅 가이드2" src="https://github.com/user-attachments/assets/c4dd8262-40d5-4f9c-a358-fafb317a41fb" />
 
 
 단계별 디깅 화면2
