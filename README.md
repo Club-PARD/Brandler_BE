@@ -92,7 +92,7 @@ iOS 패션 브랜드 탐색 및 관리 앱
 
 <table align="center">
 <tr>
-  <th colspan="2">단계별 디깅 화면</th>
+  <th colspan="2">디깅 레벨</th>
 </tr>
   
 <tr>
@@ -101,7 +101,7 @@ iOS 패션 브랜드 탐색 및 관리 앱
 <img height="400" alt="단계별 디깅 가이드1" src="https://github.com/user-attachments/assets/69638509-f00d-4f48-8c71-2c830625f1fe" />
 
 
-단계별 디깅 화면1
+유저 단계별 디깅 화면1
 
 </td>
 <td align="center">
@@ -109,8 +109,30 @@ iOS 패션 브랜드 탐색 및 관리 앱
 <img height="400" alt="단계별 디깅 가이드2" src="https://github.com/user-attachments/assets/c4dd8262-40d5-4f9c-a358-fafb317a41fb" />
 
 
-단계별 디깅 화면2
+유저 단계별 디깅 화면2
 </td>
+
+</td>
+<td align="center">
+
+<img height="400" alt="단계별 브랜드 가이드1" src="https://github.com/user-attachments/assets/f5b99f9f-e459-4f3e-a3c3-c63b12ea64ef" />
+
+브랜드 단계별 디깅1
+</td>
+
+</td>
+<td align="center">
+
+<img height="400" alt="단계별 브랜드 가이드2" src="https://github.com/user-attachments/assets/725c7485-c5e7-4202-89a4-2073c24dddc5" />
+
+
+브랜드 단계별 디깅2
+</td>
+
+
+
+
+
 </tr>
 </table>
 
