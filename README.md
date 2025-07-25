@@ -161,6 +161,52 @@ iOS 패션 브랜드 탐색 및 관리 앱
 </table>
 
 
+<table align="center">
+<tr>
+  <th colspan="2">검색</th>
+</tr>
+  
+<tr>
+<td align="center">
+
+
+<img height="400" alt="브랜드 검색 전" src="https://github.com/user-attachments/assets/76767016-5f40-4d2e-a751-9efdf84fd1c3" />
+
+
+
+검색창
+
+</td>
+<td align="center">
+  
+
+<img height="400" alt="브랜드 검색 후" src="https://github.com/user-attachments/assets/79b1e5d5-72fe-4a48-8503-f070a900ca78" />
+
+
+
+
+브랜드 검색
+</td>
+
+
+</td>
+<td align="center">
+  
+
+<img height="400" alt="상품 검색 후" src="https://github.com/user-attachments/assets/574a0001-aefe-4b91-811c-c1490e30ab0b" />
+
+
+
+
+상품 검색
+</td>
+
+</tr>
+</table>
+
+
+
+
 
 
 
