@@ -135,7 +135,7 @@ iOS 패션 브랜드 탐색 및 관리 앱
 
 <table align="center">
 <tr>
-  <th colspan="2">홈화면</th>
+  <th colspan="2">스플래쉬</th>
 </tr>
   
 <tr>
@@ -157,6 +157,7 @@ iOS 패션 브랜드 탐색 및 관리 앱
 
 
 스플래쉬2
+<th colspan="2">홈화면</th>
 
 </td>
 
