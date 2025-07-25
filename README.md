@@ -128,16 +128,37 @@ iOS 패션 브랜드 탐색 및 관리 앱
 
 브랜드 단계별 디깅2
 </td>
-
-
-
-
-
 </tr>
 </table>
 
 
 
+<table align="center">
+<tr>
+  <th colspan="2">홈화면</th>
+</tr>
+  
+<tr>
+<td align="center">
+
+
+<img height="400" alt="메인화면" src="https://github.com/user-attachments/assets/ef59dea5-4cbe-4de1-88d1-6c7119a1efec" />
+
+
+홈화면1
+
+</td>
+<td align="center">
+  
+<img height="400" alt="메인화면 아래" src="https://github.com/user-attachments/assets/bbcb85da-38b3-4b5c-aa19-00c1b285d4ee" />
+
+
+
+
+홈화면2
+
+</tr>
+</table>
 
 
 
