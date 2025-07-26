@@ -122,7 +122,7 @@ iOS 패션 브랜드 탐색 및 관리 앱
 
 <table align="center">
   <tr>
-    <th colspan="2">프로필</th>
+    <th colspan="4">프로필</th>
   </tr>
 
   <!-- 이미지 4장 -->
