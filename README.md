@@ -90,6 +90,42 @@ iOS 패션 브랜드 탐색 및 관리 앱
 
 ### 화면 구성
 
+
+<table align="center">
+  <!-- 그룹 타이틀: 스플래쉬 / 홈화면 -->
+  <tr>
+    <th colspan="2">스플래쉬</th>
+    <th colspan="2">홈화면</th>
+  </tr>
+
+  <!-- 이미지 4장 -->
+  <tr>
+    <td align="center">
+      <img height="400" alt="스플래쉬1" src="https://github.com/user-attachments/assets/4361e9bc-cc76-4f4a-b57b-097e0352a94d" />
+    </td>
+    <td align="center">
+      <img height="400" alt="스플래쉬2" src="https://github.com/user-attachments/assets/61ffe84c-685c-45cf-8fad-9ac256d9d412" />
+    </td>
+    <td align="center">
+      <img height="400" alt="메인화면" src="https://github.com/user-attachments/assets/2176b4ba-bd51-4be3-89a2-3c669ef063c0" />
+    </td>
+    <td align="center">
+      <img height="400" alt="메인화면 아래" src="https://github.com/user-attachments/assets/ef374c52-a0a9-4573-966a-967358cf58ff" />
+    </td>
+  </tr>
+
+  <!-- 하단 설명 -->
+  <tr>
+    <td align="center">스플래쉬1</td>
+    <td align="center">스플래쉬2</td>
+    <td align="center">홈화면1</td>
+    <td align="center">홈화면2</td>
+  </tr>
+</table>
+
+
+
+
 <table align="center">
 <tr>
   <th colspan="4">디깅 레벨</th>
@@ -133,37 +169,7 @@ iOS 패션 브랜드 탐색 및 관리 앱
 
 
 
-<table align="center">
-  <!-- 그룹 타이틀: 스플래쉬 / 홈화면 -->
-  <tr>
-    <th colspan="2">스플래쉬</th>
-    <th colspan="2">홈화면</th>
-  </tr>
 
-  <!-- 이미지 4장 -->
-  <tr>
-    <td align="center">
-      <img height="400" alt="스플래쉬1" src="https://github.com/user-attachments/assets/4361e9bc-cc76-4f4a-b57b-097e0352a94d" />
-    </td>
-    <td align="center">
-      <img height="400" alt="스플래쉬2" src="https://github.com/user-attachments/assets/61ffe84c-685c-45cf-8fad-9ac256d9d412" />
-    </td>
-    <td align="center">
-      <img height="400" alt="메인화면" src="https://github.com/user-attachments/assets/2176b4ba-bd51-4be3-89a2-3c669ef063c0" />
-    </td>
-    <td align="center">
-      <img height="400" alt="메인화면 아래" src="https://github.com/user-attachments/assets/ef374c52-a0a9-4573-966a-967358cf58ff" />
-    </td>
-  </tr>
-
-  <!-- 하단 설명 -->
-  <tr>
-    <td align="center">스플래쉬1</td>
-    <td align="center">스플래쉬2</td>
-    <td align="center">홈화면1</td>
-    <td align="center">홈화면2</td>
-  </tr>
-</table>
 
 
 <table align="center">
@@ -211,7 +217,7 @@ iOS 패션 브랜드 탐색 및 관리 앱
 
 <table align="center">
   <tr>
-    <th colspan="2">브랜드</th>
+    <th colspan="3">브랜드</th>
   </tr>
 
   <!-- 이미지 4장 -->
