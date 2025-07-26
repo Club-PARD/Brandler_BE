@@ -116,10 +116,7 @@ iOS 패션 브랜드 탐색 및 관리 앱
 
   <!-- 하단 설명 -->
   <tr>
-    <td align="center">스플래쉬1</td>
-    <td align="center">스플래쉬2</td>
-    <td align="center">홈화면1</td>
-    <td align="center">홈화면2</td>
+    
   </tr>
 </table>
 
