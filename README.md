@@ -47,6 +47,7 @@ iOS 패션 브랜드 탐색 및 관리 앱
 | <img src="https://github.com/user-attachments/assets/a8e911c6-1cf8-44fe-ad2c-167e8daf4021" width="120" /> | <img src="https://github.com/user-attachments/assets/a8e911c6-1cf8-44fe-ad2c-167e8daf4021" width="120" /> | <img src="https://github.com/user-attachments/assets/a8e911c6-1cf8-44fe-ad2c-167e8daf4021" width="120" /> | <img src="https://github.com/user-attachments/assets/a8e911c6-1cf8-44fe-ad2c-167e8daf4021" width="120" /> |
 
 | PM 허승민 | 디자이너 조예영 |
+|------------|------------|
 | <img src="https://github.com/user-attachments/assets/a8e911c6-1cf8-44fe-ad2c-167e8daf4021" width="120" /> | <img src="https://github.com/user-attachments/assets/a8e911c6-1cf8-44fe-ad2c-167e8daf4021" width="120" /> |
 
 
