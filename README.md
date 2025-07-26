@@ -2,6 +2,7 @@
 # 👕 Brandler (브랜들러)
 iOS 패션 브랜드 탐색 및 관리 앱
 
+<img width="3485" height="1109" alt="__덉씠__1" src="https://github.com/user-attachments/assets/fda358c9-8515-4481-b33a-f299f57196c1" />
 
 
 </div>
