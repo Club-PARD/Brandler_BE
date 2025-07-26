@@ -1,4 +1,4 @@
-<div align="center">  
+<img width="1179" height="2556" alt="유저 프로필 화면" src="https://github.com/user-attachments/assets/a93527f8-3d2c-402a-b270-c678a1330adf" /><div align="center">  
   <a href="https://git.io/typing-svg">
     <img src="https://readme-typing-svg.demolab.com?font=Poppins&size=40&duration=3000&pause=2300&color=6BA1FF&center=true&random=false&height=80&lines=Brandler" alt="Typing SVG" />
   </a>
@@ -116,10 +116,43 @@ iOS 패션 브랜드 탐색 및 관리 앱
 
   <!-- 하단 설명 -->
   <tr>
-    
+    <td align="center">스플래쉬1</td>
+    <td align="center">스플래쉬2</td>
+    <td align="center">홈화면1</td>
+    <td align="center">홈화면2</td>
   </tr>
 </table>
 
+
+<table align="center">
+  <tr>
+    <th colspan="2">프로필</th>
+  </tr>
+
+  <!-- 이미지 4장 -->
+  <tr>
+    <td align="center">
+    <img height="400" alt="온보딩 장르 선택 후" src="https://github.com/user-attachments/assets/e57d6341-8de0-45cc-9b0a-f40e204d76ea" />
+    </td>
+    <td align="center">
+    <img height="400" alt="온보딩 마지막 화면" src="https://github.com/user-attachments/assets/31f16a2c-1203-4470-ab8e-fad7f3135c33" />
+    </td>
+    <td align="center">
+    <img height="400" alt="유저 프로필 화면" src="https://github.com/user-attachments/assets/f9514d57-7faa-434e-9591-7832869148d4" />
+    </td>
+    <td align="center">
+    <img height="400" alt="유저 프로필 화면 2" src="https://github.com/user-attachments/assets/497eebc5-692c-4cfd-a75e-25e385d8557b" />
+    </td>
+  </tr>
+
+  <!-- 하단 설명 -->
+  <tr>
+    <td align="center">장르선택</td>
+    <td align="center">프로필 생성</td>
+    <td align="center">프로필</td>
+    <td align="center">프로필2</td>
+  </tr>
+</table>
 
 
 
