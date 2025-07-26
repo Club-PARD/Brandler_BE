@@ -49,7 +49,7 @@ iOS 패션 브랜드 탐색 및 관리 앱
 
 | iOS 김경동 | iOS 정태주 | iOS 지예혁 |
 |------------|------------|------------|
-| <img width="120" alt="image" src="https://github.com/user-attachments/assets/7bba5604-d131-42ee-98ed-215e12a50b56" /> | <img width="120"  alt="image" src="https://github.com/user-attachments/assets/91da0d5a-1817-4bfb-9a7d-b6bd491626cf" /> | <img  height="300"  alt="image" src="https://github.com/user-attachments/assets/42a08bc0-6580-48fc-a422-ea4be76f3cb7" />
+| <img width="120" alt="image" src="https://github.com/user-attachments/assets/7bba5604-d131-42ee-98ed-215e12a50b56" /> | <img width="120"  alt="image" src="https://github.com/user-attachments/assets/91da0d5a-1817-4bfb-9a7d-b6bd491626cf" /> | <img  height="200"  alt="image" src="https://github.com/user-attachments/assets/42a08bc0-6580-48fc-a422-ea4be76f3cb7" />
  | 
 
 
