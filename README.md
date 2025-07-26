@@ -44,8 +44,7 @@ iOS 패션 브랜드 탐색 및 관리 앱
 
 | PM 허승민 | 디자이너 조예영 | Back-end 김민규 |
 |------------|------------|------------|
-| <img src="https://github.com/user-attachments/assets/a8e911c6-1cf8-44fe-ad2c-167e8daf4021" width="120" /> | <img width="120"  alt="image" src="https://github.com/user-attachments/assets/e9691ec0-832e-4f62-8add-05e99bfeb6c2" />
- | <img src="https://github.com/user-attachments/assets/a8e911c6-1cf8-44fe-ad2c-167e8daf4021" width="120" /> |
+| <img src="https://github.com/user-attachments/assets/a8e911c6-1cf8-44fe-ad2c-167e8daf4021" width="120" /> | <img width="120"  alt="image" src="https://github.com/user-attachments/assets/e9691ec0-832e-4f62-8add-05e99bfeb6c2" />| <img src="https://github.com/user-attachments/assets/a8e911c6-1cf8-44fe-ad2c-167e8daf4021" width="120" /> |
 
 
 | iOS 김경동 | iOS 정태주 | iOS 지예혁 |
