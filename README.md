@@ -73,6 +73,33 @@ iOS 패션 브랜드 탐색 및 관리 앱
 
 ---
 
+## Tech Stack
+
+### FrontEnd.
+<p>
+  &nbsp;&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/iOS-000000?style=flat&logo=apple&logoColor=white"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/Swift-FA7343?style=flat&logo=swift&logoColor=white"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/SwiftUI-2E86C1?style=flat&logo=swift&logoColor=white"/>
+</p>
+
+### BackEnd.
+<p>
+  &nbsp;&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/Java-007396?style=flat&logo=OpenJDK&logoColor=white"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat&logo=springboot&logoColor=white"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=MySQL&logoColor=white"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/AWS-232F3E?style=flat&logo=Amazon%20AWS&logoColor=white"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/EC2-FF9900?style=flat&logo=Amazon%20EC2&logoColor=white"/>
+</p>
+  
+### Collaboration Tools.
+<p>
+  &nbsp;&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/Slack-4A154B?style=flat&logo=Slack&logoColor=white"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=Notion&logoColor=white"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=Figma&logoColor=white"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=GitHub&logoColor=white"/>
+</p>
+
 ## 🧩 주요 기능 구성
 
 | 화면 | 주요 기능 |
