@@ -62,17 +62,6 @@ iOS 패션 브랜드 탐색 및 관리 앱
 
 ---
 
-## 🛠 개발 환경
-
-- Language: `Swift`, `Java`
-- iOS Framework: `SwiftUI`
-- Backend Framework: `Spring Boot`
-- Database: `MySQL`
-- ORM: `JPA`
-- Deploy: `AWS EC2`, `Route 53`
-
----
-
 ## Tech Stack
 
 ### FrontEnd.
@@ -99,6 +88,7 @@ iOS 패션 브랜드 탐색 및 관리 앱
   &nbsp;&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white"/>
   &nbsp;&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=GitHub&logoColor=white"/>
 </p>
+---
 
 ## 🧩 주요 기능 구성
 
@@ -343,4 +333,8 @@ iOS 패션 브랜드 탐색 및 관리 앱
 
 
 ---
+
+---
+
+# Thank you! :)
 
