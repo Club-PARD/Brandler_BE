@@ -1,3 +1,7 @@
+<div align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Poppins&size=40&duration=3000&pause=2300&color=6BA1FF&center=true&vCenter=true&width=435&lines=Action+Point" alt="Typing SVG" />
+  </a>
 
 # Brandler (브랜들러)
 iOS 패션 브랜드 탐색 및 관리 앱
