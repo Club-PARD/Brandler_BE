@@ -168,7 +168,7 @@ iOS 패션 브랜드 탐색 및 관리 앱
 
 <table align="center">
 <tr>
-  <th colspan="2">검색</th>
+  <th colspan="3">검색</th>
 </tr>
   
 <tr>
@@ -209,7 +209,31 @@ iOS 패션 브랜드 탐색 및 관리 앱
 </tr>
 </table>
 
+<table align="center">
+  <tr>
+    <th colspan="2">브랜드</th>
+  </tr>
 
+  <!-- 이미지 4장 -->
+  <tr>
+    <td align="center">
+      <img height="400" alt="브랜드 페이지 스크랩 후" src="https://github.com/user-attachments/assets/b815cf48-d39e-4334-8c57-8fff11da9816" />
+    </td>
+    <td align="center">
+     <img height="400" alt="최근 본 브랜드 화면" src="https://github.com/user-attachments/assets/2e766140-321b-4faf-821a-bd12623e78b7" />
+    </td>
+    <td align="center">
+      <img height="400" alt="스크랩 한 브랜드 화면" src="https://github.com/user-attachments/assets/50c04c12-f0a8-49bf-96aa-e5dc62edbebc" />
+    </td>
+  </tr>
+
+  <!-- 하단 설명 -->
+  <tr>
+    <td align="center">브랜드 페이지</td>
+    <td align="center">최근본 브랜드</td>
+    <td align="center">내가 스크랩한 브랜드</td>
+  </tr>
+</table>
 
 
 
