@@ -1,12 +1,8 @@
-<img width="1179" height="2556" alt="유저 프로필 화면" src="https://github.com/user-attachments/assets/a93527f8-3d2c-402a-b270-c678a1330adf" /><div align="center">  
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Poppins&size=40&duration=3000&pause=2300&color=6BA1FF&center=true&random=false&height=80&lines=Brandler" alt="Typing SVG" />
-  </a>
 
 # 👕 Brandler (브랜들러)
 iOS 패션 브랜드 탐색 및 관리 앱
 
-<img src="https://github.com/user-attachments/assets/8d9323a3-fe09-4033-9f13-bc7cc340032c" width="600" />
+
 
 </div>
 
