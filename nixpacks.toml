@@ -2,7 +2,7 @@
 cmds = ["./gradlew build -x test"]
 
 [phases.start]
-cmd = "java -Dserver.port=$PORT -Dspring.profiles.active=railway -jar build/libs/*.jar"
+cmd = "java -Dserver.port=$PORT -Dspring.profiles.active=railway -jar build/libs/Brandler_BE-0.0.1-SNAPSHOT.jar"
 
 [variables]
 JAVA_VERSION = "17"
