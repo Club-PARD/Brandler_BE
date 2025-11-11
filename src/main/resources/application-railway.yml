@@ -1,7 +1,7 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: ${DATABASE_URL:jdbc:mysql://localhost:3306/brandler?serverTimezone=UTC&characterEncoding=UTF-8}
+    url: ${DATABASE_URL:jdbc:mysql://localhost:3306/BRANDLER?serverTimezone=UTC&characterEncoding=UTF-8}
     username: ${DATABASE_USERNAME:root}
     password: ${DATABASE_PASSWORD:your_password_here}
   
